@@ -1,0 +1,85 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link href="image/service.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/js.js">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/js/bootstrap.min.js "> -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap.npm.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+   <style>
+        .message{
+            background-color: rgba(123, 255, 0, 0.705);
+            width: 100%;
+            height: 100vh;
+            padding: 10px;
+        }
+        input, label, h3{
+            margin: 10px;
+        }
+        .cancel{
+            background-color: rgba(0, 0, 255, 0.479);
+            border-radius: 10px;
+            position: fixed;
+            padding: 5px;
+            right: 0;
+            z-index: 1;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <div class="cancel">
+            <a href="index.html"><i class="fa fa-close"  style="color: white;padding:10px;"></i></a>
+        </div>
+    </div>
+    <div class="col-md-12 message">
+        <div class="col-md-12">
+            <h3>Send Us A Message</h3>
+        </div>
+        <form action="">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <input type="text" placeholder="name" class="bt1 form-control">
+                </div><br>
+                <div class="col-md-12">
+                    <input type="email" placeholder="email" class="bt1 form-control">
+                </div><br>
+                <label>message:</label>
+                <div class="col-md-12">
+                    <!-- <input type="text" placeholder="message" class="bt2 form-control">  -->
+                    <textarea name="" id="" cols="30" rows="10" class="bt2 form-control"></textarea>
+                </div>
+            </div><br>
+
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <input type="button" value="SUBMIT" class="form-control btn-success">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

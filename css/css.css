@@ -1,0 +1,518 @@
+*{
+    margin:0;padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+nav {
+    width: auto;
+}
+nav  .navbars ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+nav  .navbars ul li a:hover{
+    background-color: #333;
+    color: #ffffff;
+}
+nav  .navbars ul li:hover{
+    background-color: rgb(145, 145, 145);
+    display: block;
+    color: #ffffff;
+}
+nav  .navbars ul li ul{
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+nav  .navbars ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+nav  .navbars ul li ul li ul{
+    left: 200px; 
+    top: 0;
+}
+nav  .navbars ul li:focus-within > ul,
+nav  .navbars ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+
+nav label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    right: 10%;
+}
+
+@media only screen and (max-width: 900px){
+    .head{
+        margin-top: 110px;
+        background-color: rgb(253, 228, 0);
+        padding: 10px;
+    }
+    .container-fluid, .container{
+        margin-top: 50px;
+    }
+    nav {
+        padding: 5px;
+    }
+
+    label{
+        display: initial;
+    }
+    nav  .navbars{
+        position: absolute;
+        top:100%; left:0; right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+        margin-right: 0;
+
+        transition: all 0.3s;
+        overflow: scroll;
+    }
+
+    nav  .navbars ul li{
+        width: 100%;
+    }
+
+    nav  .navbars ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    nav  .navbars ul li ul li{
+        background: #eee;
+    }
+
+    nav  .navbars ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar ~ label #cancel{
+        display: none;
+    }
+    #menu-bar:checked ~ .navbars{
+        display: initial;
+        right: 0;
+    }
+    #menu-bar:checked ~ label #bars{
+        display: none;
+    }
+    #menu-bar:checked ~ label #cancel{
+        display: block;
+    }   nav {
+        padding: 20px;
+    }
+
+    nav  label{
+        display: initial;
+    }
+    nav  .navbars{
+        position: absolute;
+        top:100%; left:0; right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+        margin-right: 0;
+
+        transition: all 0.3s;
+        overflow: scroll;
+    }
+
+    nav  .navbars ul li{
+        width: 100%;
+    }
+
+    nav  .navbars ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    nav  .navbars ul li ul li{
+        background: #eee;
+    }
+
+    nav  .navbars ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar ~ label #cancel{
+        display: none;
+    }
+    #menu-bar:checked ~ .navbars{
+        display: initial;
+        right: 0;
+    }
+    #menu-bar:checked ~ label #bars{
+        display: none;
+    }
+    #menu-bar:checked ~ label #cancel{
+        display: block;
+    }
+
+    .g1 img{
+        margin: 5px;
+        border: 1px solid black;
+    }
+    .gallery .gt{
+        margin-top: -5px;
+    }
+    .sg{
+        margin: 5px;
+    }
+    .test{
+        margin-top: 20px;
+    }
+    .testimony{
+        height: auto;
+        overflow: display;
+    }
+}
+
+.first3{
+    color: #fff;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+}
+.first{
+    margin-top: 60px;
+    padding: 30px;
+    background-color: rgb(0, 162, 255);
+}
+.first2{
+    color: #fff;
+    text-align: left;
+}
+.first2 h1{
+    font-weight: bolder;
+    font-size: 6rem;
+    margin-left: 20px;
+}
+.first2 h3{
+    font-size: 4rem;
+    margin-left: 20px;
+}
+.first2 p{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.first3 label{
+    color: gold;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.first3 input[type='text']{
+    margin: 5px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+}
+.first3 input[type='button']{
+    margin: 5px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    background-color: gold;
+    color: black;
+    border: none;
+    transition: all 1s;
+}
+.first3 input[type='button']:hover{
+    background-color: rgb(4, 138, 216);
+    color: white;
+}
+.about{
+    position: relative;
+    z-index: 0;
+}
+.about_1{
+    margin: 10px;
+}
+.aboutimg{
+    background-color: rgb(0, 102, 255);
+    padding: 10px;
+    width: 330px;
+    
+}
+.about_2t{
+    background-color: #fff;
+    width: 305px;
+    height: 210px;
+    margin-top: -10px;
+    margin-left: 4px;
+}
+.about_2r{
+    background-color: #fff;
+    text-align: left;
+    border: 1px solid black;
+    margin: 10px;
+}
+.about_2t h1{
+    color: rgb(0, 102, 255);
+    font-size: 10rem;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.about_2t h3{
+    position: relative;
+    color: rgb(0, 162, 255);
+    font-size: 2rem;
+    top: 10px;
+    text-align: center;
+}
+.about_2t p{
+    position: relative;
+    text-align: center;
+}
+.about_2r h3{
+    text-align: justify;
+    color: black;
+    font-weight: bold;
+} 
+
+.about h2, .features h2{
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+.second{
+    position: relative;
+    background-color: rgb(0, 162, 255);
+    padding: 20px;
+}
+.second h2{
+    font-size: 4rem;
+}
+.second h2{
+    color: #fff;
+}
+
+.second #a {
+    color: rgb(5, 84, 255);
+}
+.second h4{
+    color: rgb(0, 0, 0);
+}
+
+.feature1 img{
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+    border: 5px solid gold;
+    border-radius: 10px;
+}
+.featuer{
+    color: #fff;
+    background-color: rgb(0, 162, 255);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: auto;
+}
+.g1{
+    height: 300px;
+}
+
+.gallery img{
+    height: 300px;
+    width: 100%;
+    margin-left: -5px;
+    display: flex;
+}
+.g1:hover .gt{
+    display: block;
+    position: relative;
+    top: -300px;
+    left: -5px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.918);
+    transition: all 1s;
+    zoom: initial;
+}
+.gallery .gt h3{
+    margin: 60px 40px;
+    color: #fff;
+    text-align: right;
+    transition: all 1s;
+}
+.service button{
+    background-color: rgb(4, 138, 216);
+    color: #fff;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-top: 1px solid #fff;
+    padding: 5px;
+}
+.service button:hover{
+    background-color: rgb(5, 84, 255);
+    color: #fff;
+}
+.service .t h4{
+    color: gold;
+}
+.service .t{
+    border: 1px solid rgb(145, 11, 11);
+    margin: 5px;
+    width: 100%;
+    display: none;
+}
+.service .t p{
+    color: rgb(128, 128, 128);
+}
+.service .t img{
+    height:200px;
+    width: 100%;
+    margin: 5px;
+}
+.client h2{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.client .img img{
+    border: 1.5px solid rgb(0, 0, 0);
+    width: 300px;
+    height: 250px;
+}
+.testimony{
+    background-color: rgb(219, 219, 219);
+    padding:10px; 
+    height: 350px;
+    overflow: hidden;
+}
+.testimonies{
+    position: relative;
+    top: 1px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.testimony img{
+    border: 1px solid white;
+    width: 100%;
+}
+.testimonies span{
+    color: gold;
+    font-weight: bold;
+    font-size: 1.5rem;
+    float: right;
+}
+
+.contact{
+    margin: 20px;
+}
+.contact h3{
+    margin: 5px;
+}
+.contact h2{
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.contact .bt1{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+}
+.contact .bt2{
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    margin: 4px;
+    outline: none;
+}
+.contact .bt3{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+}
+.captcha{
+    margin: 5px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 30%;
+    outline: none;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: all 1s;
+    text-align: center;
+}
+.contact input[type='button']{
+    margin: 5px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 35%;
+    outline: none;
+    background-color: rgb(4, 138, 216);
+    color: black;
+    border: none;
+    transition: all 1s;
+}
+.contact input[type='button']:hover{
+    background-color: gold;
+    color: white;
+}
+.contact h3{
+    color: rgb(4, 138, 216);
+}
+.contact i{
+    color: gold;
+    padding: 5px;
+}
+.contact i span, .contact i a{
+    color: rgb(68, 68, 68);
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
